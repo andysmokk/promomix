@@ -1,0 +1,125 @@
+:root {
+    --main-font: font-family: TT Norms, sans-serif;
+    --main-red: #E52322;
+    --main-grey: #B0B6BF;
+    --main-black: #1F2C37;
+    --main-white: #FFFFFF;
+}
+
+body {
+    color: var(--main-black);
+  font-family: var(--main-font);
+  font-size: 16px;
+  font-weight: normal;
+  font-style: normal;
+  line-height: 1;
+}
+
+button {
+    text-transform: inherit;
+}
+
+button:hover,
+button:focus,
+a:hover,
+a:focus {
+    color: var(--main-red);
+}
+
+.header {
+    background-color: yellowgreen;
+}
+
+.container {
+  width: 1200px;
+  margin: 0 auto;
+  border: 2px solid black;
+}
+
+.nav-box {
+  display: flex;
+}
+
+.logo {
+    padding-top: 40px;
+    padding-bottom: 40px;
+}
+
+.nav-box .list {
+  display: flex;
+  justify-content: space-between;
+  margin-left: auto;
+}
+
+.list-item:not(:last-child) {
+  margin-right: 120px;
+}
+
+.list-item button {
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  background-color: green;
+}
+
+.list-item button,
+.list-item a {
+  padding-top: 42px;
+  padding-bottom: 42px;
+}
+
+.list .list-item:first-child {
+    font-size: 16px;
+    display: flex;
+    align-items: center;
+}
+
+.list .list-item:last-child {
+    font-size: 13px;
+}
+
+.list .list-item:first-child(2) {
+    font-size: 15px;
+}
+
+.hero {
+    background: url(../images/index/img1.jpg);
+    background-repeat: no-repeat;
+    background-position: right;
+    background-size: auto;
+}
+
+.hero .container {
+    padding-top: 668px;
+    padding-bottom: 70px;
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-between;
+}
+
+.hero h1 {
+    font-weight: 500;
+    font-size: 45px;
+    line-height: 1.2;
+    color: var(--main-white);
+}
+
+.hero h1 span {
+    color: var(--main-red);
+    text-transform: capitalize;
+}
+
+.social-list {
+    color: var(--main-white);
+    display: flex;
+    font-size: 14px;
+}
+
+.social-list li:not(:last-child) {
+    margin-right: 50px;
+    
+}
+ 
+/* .features:nth-child(2n + 2) {
+  background: red;
+} */
