@@ -79,6 +79,15 @@ a:focus {
   font-size: 15px;
 }
 
+.button-icon {
+  display: flex;
+  align-items: center;
+}
+
+.icon-search {
+  margin-right: 11.41px;
+}
+
 .hero {
   background: url(../images/index/img1.jpg);
   background-repeat: no-repeat;
