@@ -17,6 +17,7 @@ body {
 
 button {
   text-transform: inherit;
+  font-weight: inherit;
 }
 
 button:hover,
@@ -65,17 +66,20 @@ a:focus {
   /* background-color: green; */
 }
 
-.list .list-item:first-child {
+.nav-box .list-item:first-child {
   font-size: 16px;
   display: flex;
   align-items: center;
+  text-transform: capitalize;
 }
 
-.list .list-item:last-child {
+.nav-box .list-item:last-child {
   font-size: 13px;
+  text-transform: uppercase;
+  font-weight: 700;
 }
 
-.list .list-item:nth-child(2) {
+.nav-box .list-item:nth-child(2) {
   font-size: 15px;
 }
 
@@ -86,7 +90,15 @@ a:focus {
 
 .icon-search {
   margin-right: 11.41px;
+  fill: var(--main-black);
 }
+
+.button-icon:hover .icon-search,
+.button-icon:focus .icon-search {
+  fill: currentColor;
+}
+
+/* Секция герой */
 
 .hero {
   background: url(../images/index/img1.jpg);
@@ -96,7 +108,7 @@ a:focus {
 }
 
 .hero .container {
-  padding-top: 668px;
+  padding-top: 568px;
   padding-bottom: 70px;
   display: flex;
   align-items: flex-end;
@@ -125,6 +137,25 @@ a:focus {
   margin-right: 50px;
 }
 
+/* Секция услуги */
+
+.services-list {
+  display: flex;
+  flex-wrap: wrap;
+
+  margin-right: -60px;
+  margin-bottom: -60px;
+}
+
+.services-item {
+  background-color: yellow;
+  margin-right: 60px;
+  margin-bottom: 60px;
+  flex-basis: calc((100% - 60px * 4) / 4);
+
+  width: 255px;
+  height: 255px;
+}
 /* .features:nth-child(2n + 2) {
   background: red;
 } */
