@@ -31,10 +31,18 @@ a:focus {
   background-color: yellowgreen;
 }
 
+.container-nav {
+  width: 1200px;
+  margin: 0 auto;
+  border: 1px solid;
+}
+
 .container {
   width: 1200px;
   margin: 0 auto;
   border: 1px solid;
+  padding-top: 200px;
+  padding-bottom: 200px;
 }
 
 .nav-box {
@@ -155,6 +163,34 @@ a:focus {
 
   width: 255px;
   height: 255px;
+}
+
+.services-link {
+  height: 255px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+
+.services-text {
+  font-size: 14px;
+  color: var(--main-grey);
+  letter-spacing: 0.05em;
+
+  margin-bottom: 20px;
+}
+
+.services-title {
+  font-size: 37px;
+  font-weight: 500;
+  line-height: 1.2;
+  color: var(--main-black);
+
+  margin-bottom: 100px;
+}
+
+.part-title {
+  color: var(--main-red);
 }
 /* .features:nth-child(2n + 2) {
   background: red;
