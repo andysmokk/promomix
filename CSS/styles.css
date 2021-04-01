@@ -4,6 +4,9 @@
   --main-grey: #b0b6bf;
   --main-black: #1f2c37;
   --main-white: #ffffff;
+  --background-color: #f2f4f7;
+
+  --grid-item: 4;
 }
 
 body {
@@ -13,6 +16,12 @@ body {
   font-weight: normal;
   font-style: normal;
   line-height: 1;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
 }
 
 button {
@@ -42,7 +51,6 @@ a:focus {
   margin: 0 auto;
   border: 1px solid;
   padding-top: 200px;
-  padding-bottom: 200px;
 }
 
 .nav-box {
@@ -153,45 +161,157 @@ a:focus {
 
   margin-right: -60px;
   margin-bottom: -60px;
+  margin-top: 100px;
 }
 
 .services-item {
   background-color: yellow;
   margin-right: 60px;
   margin-bottom: 60px;
-  flex-basis: calc((100% - 60px * 4) / 4);
+  flex-basis: calc((100% - 60px * var(--grid-item)) / var(--grid-item));
 
   width: 255px;
   height: 255px;
+}
+
+.services-item .services-link {
+  padding-top: 40px;
+  padding-left: 40px;
 }
 
 .services-link {
   height: 255px;
   display: flex;
   flex-direction: column;
-  justify-content: space-around;
+  /* justify-content: space-around; */
 }
 
-.services-text {
+.services-icons {
+  fill: var(--main-red);
+}
+
+.services-link:hover .services-item-text,
+.services-link:focus .services-item-text {
+  color: var(--main-white);
+}
+
+.services-link:hover .services-icons,
+.services-link:focus .services-icons {
+  fill: var(--main-white);
+}
+
+.services-link:hover,
+.services-link:focus {
+  background-color: var(--main-red);
+}
+
+.item-text {
   font-size: 14px;
   color: var(--main-grey);
   letter-spacing: 0.05em;
-
-  margin-bottom: 20px;
+  text-transform: uppercase;
 }
 
-.services-title {
+.services-item-text {
+  font-size: 19px;
+  line-height: 1.3;
+  color: var(--main-black);
+
+  margin-top: 53px;
+}
+
+.item-title {
   font-size: 37px;
   font-weight: 500;
   line-height: 1.2;
   color: var(--main-black);
 
-  margin-bottom: 100px;
+  margin-top: 20px;
 }
 
 .part-title {
   color: var(--main-red);
 }
-/* .features:nth-child(2n + 2) {
-  background: red;
-} */
+
+/* Секци преимущества */
+
+.advantages-container {
+  background-color: var(--background-color);
+}
+
+.advantages-box {
+  display: flex;
+  margin-right: -60px;
+}
+
+.box-item {
+  --grid-item: 2;
+  flex-basis: calc((100% - 60px * var(--grid-item)) / var(--grid-item));
+  margin-right: 60px;
+  padding-bottom: 150px;
+}
+
+.advantages-list {
+  display: flex;
+  flex-wrap: wrap;
+  margin-right: -60px;
+  margin-bottom: -71px;
+}
+
+.advantages-item {
+  --grid-item: 2;
+  flex-basis: calc((100% - 60px * var(--grid-item)) / var(--grid-item));
+  margin-right: 60px;
+  margin-bottom: 71px;
+}
+
+.years-item {
+  font-size: 75px;
+  color: var(--main-red);
+
+  margin-bottom: 17px;
+}
+
+.years-text {
+  font-size: 16px;
+  line-height: 1.4;
+  color: var(--main-black);
+}
+
+.advantages-line {
+  margin-bottom: 20px;
+}
+
+/* Секция наши работы */
+
+.works-list {
+  display: flex;
+  flex-wrap: wrap;
+
+  margin-right: -60px;
+  margin-bottom: -100px;
+  margin-top: 60px;
+}
+
+.works-item {
+  --grid-item: 2;
+  flex-basis: calc((100% - 60px * var(--grid-item)) / var(--grid-item));
+  margin-right: 60px;
+  margin-bottom: 100px;
+}
+
+.works-title {
+  font-size: 20px;
+  font-weight: 500;
+  color: var(--main-black);
+
+  margin-top: 20px;
+}
+
+.works-text {
+  font-size: 11px;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+
+  margin-top: 15px;
+}
