@@ -376,3 +376,32 @@ a:focus {
 .link-all:focus .plus-item {
   stroke: var(--main-red);
 }
+
+/* Секция наши партнеры */
+
+.partners-box {
+  display: flex;
+  margin-right: -60px;
+}
+
+.partners-box-item {
+  --grid-item: 2;
+  flex-basis: calc((100% - 60px * var(--grid-item)) / var(--grid-item));
+  margin-right: 60px;
+}
+
+.partners-list {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+
+  margin-right: -85px;
+  margin-bottom: -70px;
+}
+
+.partners-list-item {
+  --grid-item: 3;
+  flex-basis: calc((100% - 85px * var(--grid-item)) / var(--grid-item));
+  margin-right: 85px;
+  margin-bottom: 70px;
+}
