@@ -50,7 +50,6 @@ a:focus {
   width: 1200px;
   margin: 0 auto;
   border: 1px solid;
-  padding-top: 200px;
 }
 
 .nav-box {
@@ -155,6 +154,11 @@ a:focus {
 
 /* Секция услуги */
 
+.services-container {
+  padding-top: 200px;
+  padding-bottom: 187px;
+}
+
 .services-list {
   display: flex;
   flex-wrap: wrap;
@@ -236,6 +240,8 @@ a:focus {
 /* Секци преимущества */
 
 .advantages-container {
+  padding-top: 147px;
+  padding-bottom: 150px;
   background-color: var(--background-color);
 }
 
@@ -248,7 +254,6 @@ a:focus {
   --grid-item: 2;
   flex-basis: calc((100% - 60px * var(--grid-item)) / var(--grid-item));
   margin-right: 60px;
-  padding-bottom: 150px;
 }
 
 .advantages-list {
@@ -293,6 +298,11 @@ a:focus {
 }
 
 /* Секция наши работы */
+
+.works-container {
+  padding-top: 200px;
+  padding-bottom: 200px;
+}
 
 .works-list {
   display: flex;
@@ -379,6 +389,13 @@ a:focus {
 
 /* Секция наши партнеры */
 
+.partners-container {
+  padding-top: 166px;
+  padding-bottom: 167px;
+
+  background-color: var(--background-color);
+}
+
 .partners-box {
   display: flex;
   margin-right: -60px;
@@ -404,4 +421,33 @@ a:focus {
   flex-basis: calc((100% - 85px * var(--grid-item)) / var(--grid-item));
   margin-right: 85px;
   margin-bottom: 70px;
+}
+
+/* Cекция статьи и новости */
+
+.news-container {
+  padding-top: 200px;
+  padding-bottom: 200px;
+}
+
+.news-list-item {
+  display: flex;
+  flex-wrap: wrap;
+
+  margin-right: -60px;
+}
+
+.news-list-item-box {
+  --grid-item: 2;
+  flex-basis: calc((100% - 60px * var(--grid-item)) / var(--grid-item));
+  margin-right: 60px;
+}
+
+.img-box {
+  display: flex;
+  justify-content: space-between;
+}
+
+.img-box:not(:last-child) {
+  margin-bottom: 60px;
 }
