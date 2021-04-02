@@ -268,14 +268,24 @@ a:focus {
 .years-item {
   font-size: 75px;
   color: var(--main-red);
+}
 
-  margin-bottom: 17px;
+.years-item::after {
+  content: "";
+  display: block;
+  width: 70px;
+  height: 1px;
+  background-color: var(--main-grey);
+
+  margin-top: 17px;
 }
 
 .years-text {
   font-size: 16px;
   line-height: 1.4;
   color: var(--main-black);
+
+  margin-top: 20px;
 }
 
 .advantages-line {
@@ -289,7 +299,7 @@ a:focus {
   flex-wrap: wrap;
 
   margin-right: -60px;
-  margin-bottom: -100px;
+  /* margin-bottom: -100px; */
   margin-top: 60px;
 }
 
@@ -297,7 +307,7 @@ a:focus {
   --grid-item: 2;
   flex-basis: calc((100% - 60px * var(--grid-item)) / var(--grid-item));
   margin-right: 60px;
-  margin-bottom: 100px;
+  /* margin-bottom: 100px; */
 }
 
 .works-title {
@@ -312,6 +322,57 @@ a:focus {
   font-size: 11px;
   letter-spacing: 0.05em;
   text-transform: uppercase;
+  color: var(--main-grey);
 
   margin-top: 15px;
+}
+
+.works-img {
+  padding-top: 100px;
+}
+
+.works-link:hover,
+.works-link:focus {
+  color: var(--main-grey);
+}
+
+.works-link:hover h3,
+.works-link:focus h3 {
+  color: var(--main-red);
+}
+
+.plus-item {
+  stroke: var(--main-black);
+}
+
+.text-all {
+  display: flex;
+  align-items: center;
+}
+
+.text-all::before {
+  content: "";
+  display: block;
+  width: 1000px;
+  height: 1px;
+  background-color: currentColor;
+
+  margin-right: 48px;
+}
+
+.link-all {
+  font-weight: 500;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  cursor: pointer;
+
+  margin-top: 80px;
+}
+
+.link-all:hover .plus-item,
+.link-all:focus .plus-item {
+  stroke: var(--main-red);
 }
