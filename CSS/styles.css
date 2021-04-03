@@ -36,20 +36,20 @@ a:focus {
   color: var(--main-red);
 }
 
-.header {
+/* .header {
   background-color: yellowgreen;
-}
+} */
 
 .container-nav {
   width: 1200px;
   margin: 0 auto;
-  border: 1px solid;
+  /* border: 1px solid; */
 }
 
 .container {
   width: 1200px;
   margin: 0 auto;
-  border: 1px solid;
+  /* border: 1px solid; */
 }
 
 .nav-box {
@@ -169,7 +169,7 @@ a:focus {
 }
 
 .services-item {
-  background-color: yellow;
+  /* background-color: yellow; */
   margin-right: 60px;
   margin-bottom: 60px;
   flex-basis: calc((100% - 60px * var(--grid-item)) / var(--grid-item));
@@ -539,4 +539,48 @@ a:focus {
 .request-title {
   font-size: 30px;
   line-height: 1.2;
+}
+
+.button-request {
+  font-weight: 500;
+  font-size: 12px;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+
+  background-color: var(--background-color);
+
+  padding: 22px 44px;
+  border: 1px solid var(--main-red);
+
+  margin-top: 62px;
+}
+
+.nav-item:not(:first-child) {
+  margin-top: 18px;
+}
+
+.subscription-text {
+  line-height: 1.5;
+}
+
+.subscription-button {
+  margin-top: 64px;
+}
+
+.footer-links {
+  font-size: 14px;
+
+  display: flex;
+  justify-content: space-between;
+
+  padding-top: 43px;
+  padding-bottom: 43px;
+}
+
+.links-list-footer {
+  display: flex;
+}
+
+.links-item-footer + .links-item-footer {
+  margin-left: 33px;
 }
