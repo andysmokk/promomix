@@ -448,6 +448,24 @@ a:focus {
   justify-content: space-between;
 }
 
-.img-box:not(:last-child) {
+.news-list-item:not(:last-child) {
   margin-bottom: 60px;
+}
+
+.news-list {
+  margin-top: 98px;
+}
+
+.list-item-title {
+  margin-top: 20px;
+}
+
+.list-item-text {
+  margin-top: 10px;
+}
+
+.details-text {
+  display: block;
+
+  margin-top: 64px;
 }
