@@ -379,7 +379,7 @@ a:focus {
 
   cursor: pointer;
 
-  margin-top: 80px;
+  margin-top: 93px;
 }
 
 .link-all:hover .plus-item,
@@ -457,15 +457,86 @@ a:focus {
 }
 
 .list-item-title {
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 1.3;
+
+  color: var(--main-black);
+
   margin-top: 20px;
 }
 
+.link-news-item:hover .list-item-title,
+.link-news-item:focus .list-item-title {
+  color: currentColor;
+}
+
 .list-item-text {
+  line-height: 1.5;
+  color: var(--main-black);
+
   margin-top: 10px;
 }
 
 .details-text {
+  font-weight: 500;
+  font-size: 12px;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+
   display: block;
 
-  margin-top: 64px;
+  margin-top: 40px;
+}
+
+.arrow-icon {
+  fill: var(--main-white);
+  stroke: currentColor;
+
+  margin-right: 15px;
+}
+
+.article-text {
+  font-size: 12px;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  color: var(--main-grey);
+}
+
+.data-text {
+  font-size: 14px;
+
+  color: var(--main-grey);
+}
+
+/* Секция футер */
+
+.footer-box {
+  background-color: var(--background-color);
+
+  padding-top: 100px;
+  padding-bottom: 100px;
+}
+
+.footer-box {
+  display: flex;
+}
+
+.request-box {
+  flex-basis: calc(50% - 30px);
+  margin-right: 60px;
+}
+
+.nav-box {
+  flex-basis: calc((50% - 90px) / 2);
+  margin-right: 60px;
+}
+
+.subscription-box {
+  flex-basis: calc((50% - 90px) / 2);
+}
+
+.request-title {
+  font-size: 30px;
+  line-height: 1.2;
 }

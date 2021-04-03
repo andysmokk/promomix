@@ -414,7 +414,7 @@
           <ul class="news-list">
             <li class="news-list-item">
               <div class="news-list-item-box img-box">
-                <p>новость</p>
+                <p class="news-article">новость</p>
                 <img
                   src="./images/articles/img1.jpg"
                   alt="вывеска"
@@ -422,7 +422,7 @@
                 />
               </div>
               <div class="news-list-item-box">
-                <a href="">
+                <a class="link-news-item" href="">
                   <p class="data-text">21.03.2020</p>
                   <h3 class="list-item-title">
                     Уникальная услуга «вывеска в аренду»
@@ -432,13 +432,18 @@
                     рано или поздно возникает необходимость в дополнительной
                     визуальной рекламе.
                   </p>
-                  <span class="details-text">подробнее</span>
+                  <span class="details-text">
+                    <svg class="arrow-icon" width="12" height="8.5">
+                      <use href="./images/icon/sprite.svg#icon-arrow-12"></use>
+                    </svg>
+                    подробнее
+                  </span>
                 </a>
               </div>
             </li>
             <li class="news-list-item">
               <div class="news-list-item-box img-box">
-                <p>статья</p>
+                <p class="article-text">статья</p>
                 <img
                   src="./images/articles/img2.jpg"
                   alt="полиграфия"
@@ -446,7 +451,7 @@
                 />
               </div>
               <div class="news-list-item-box">
-                <a href=""
+                <a class="link-news-item" href=""
                   ><p class="data-text">21.03.2020</p>
                   <h3 class="list-item-title">
                     Лайфхаки полиграфии от заказчиков
@@ -457,13 +462,18 @@
                     только ленивый. Так как предложений очень много, то,
                     соответственно и достаточно высок.
                   </p>
-                  <span class="details-text">подробнее</span></a
+                  <span class="details-text">
+                    <svg class="arrow-icon" width="12" height="8.5">
+                      <use href="./images/icon/sprite.svg#icon-arrow-12"></use>
+                    </svg>
+                    подробнее
+                  </span></a
                 >
               </div>
             </li>
             <li class="news-list-item">
               <div class="news-list-item-box img-box">
-                <p>статья</p>
+                <p class="article-text">статья</p>
                 <img
                   src="./images/articles/img3.jpg"
                   alt="полиграфия"
@@ -471,7 +481,7 @@
                 />
               </div>
               <div class="news-list-item-box">
-                <a href=""
+                <a class="link-news-item" href=""
                   ><p class="data-text">21.03.2020</p>
                   <h3 class="list-item-title">Полиграфия для бизнеса</h3>
                   <p class="list-item-text">
@@ -481,7 +491,7 @@
                     реклама.
                   </p>
                   <span class="details-text">
-                    <svg width="12" height="8">
+                    <svg class="arrow-icon" width="12" height="8.5">
                       <use href="./images/icon/sprite.svg#icon-arrow-12"></use>
                     </svg>
                     подробнее
@@ -499,47 +509,55 @@
         </div>
       </section>
     </main>
+
+    <!-- Секция футер -->
     <footer>
-      <div>
-        <div>
-          <a href="/">Promomix – рекламное агентство полного цикла</a>
-          <button type="button">оставить заявку</button>
+      <div class="container">
+        <div class="footer-box">
+          <div class="request-box">
+            <a class="request-title" href="/"
+              ><span>Promomix –</span> <br />
+              рекламное агентство <br />
+              полного цикла</a
+            >
+            <button type="button">оставить заявку</button>
+          </div>
+          <nav class="nav-box">
+            <ul>
+              <li><a href="./html/about.html">О компании</a></li>
+              <li><a href="./html/serviсes.html">Услуги</a></li>
+              <li><a href="./html/works.html">Наши работы</a></li>
+              <li><a href="./html/servis.html">Сервис</a></li>
+              <li><a href="./html/complex.html">Комплексные решения</a></li>
+              <li><a href="./html/posts.html">Статьи и новости</a></li>
+              <li><a href="/">Контакты</a></li>
+            </ul>
+          </nav>
+          <div class="subscription-box">
+            <p>
+              Чтобы быть в курсе всех акций и новых событий, подпишитесь на нашу
+              рассылку.
+            </p>
+            <form>
+              <input type="email" placeholder="ваш e-mail" />
+              <button type="submit">&#8594;</button>
+            </form>
+          </div>
         </div>
-        <nav>
+        <div>
+          <p>&copy; 2011 - 2020 Promomix</p>
           <ul>
-            <li><a href="./html/about.html">О компании</a></li>
-            <li><a href="./html/serviсes.html">Услуги</a></li>
-            <li><a href="./html/works.html">Наши работы</a></li>
-            <li><a href="./html/servis.html">Сервис</a></li>
-            <li><a href="./html/complex.html">Комплексные решения</a></li>
-            <li><a href="./html/posts.html">Статьи и новости</a></li>
-            <li><a href="/">Контакты</a></li>
+            <li>
+              <a href="/">Facebook</a>
+            </li>
+            <li>
+              <a href="/">Vkontakte</a>
+            </li>
+            <li>
+              <a href="/">Instagram</a>
+            </li>
           </ul>
-        </nav>
-        <div>
-          <p>
-            Чтобы быть в курсе всех акций и новых событий, подпишитесь на нашу
-            рассылку.
-          </p>
-          <form>
-            <input type="email" placeholder="ваш e-mail" />
-            <button type="submit">&#8594;</button>
-          </form>
         </div>
-      </div>
-      <div>
-        <p>&copy; 2011 - 2020 Promomix</p>
-        <ul>
-          <li>
-            <a href="/">Facebook</a>
-          </li>
-          <li>
-            <a href="/">Vkontakte</a>
-          </li>
-          <li>
-            <a href="/">Instagram</a>
-          </li>
-        </ul>
       </div>
     </footer>
   </body>
