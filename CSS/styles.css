@@ -46,7 +46,13 @@ a:focus {
 
 .container-nav {
   width: 1200px;
-  margin: 0 auto;
+
+  padding-right: 30px;
+  padding-left: 30px;
+
+  margin-right: auto;
+  margin-left: auto;
+
   /* border: 1px solid; */
 }
 
@@ -577,11 +583,13 @@ a:focus {
 
 .subscription-text {
   line-height: 1.5;
+
+  margin-bottom: 64px;
 }
 
-.subscription-button {
+/* .subscription-button {
   margin-top: 64px;
-}
+} */
 
 .footer-links {
   font-size: 14px;
@@ -603,7 +611,7 @@ a:focus {
 
 .footer-form input {
   border: none;
-  padding-bottom: 15px;
+  /* padding-bottom: 15px; */
 }
 
 .footer-form {
@@ -611,6 +619,35 @@ a:focus {
   align-items: center;
   justify-content: space-between;
   border-bottom: 1px solid var(--main-black);
+
+  /* margin-top: 64px; */
+}
+
+.footer-form button {
+  border: none;
+  cursor: pointer;
+}
+
+.arrow-icon-footer {
+  fill: var(--background-color);
+  stroke: var(--main-black);
+  background-color: var(--background-color);
+}
+
+.subscription-button {
+  background-color: var(--background-color);
+
+  margin-bottom: 10px;
+}
+
+.email-placeholder {
+  background-color: var(--background-color);
+  margin-bottom: 15px;
+}
+
+.subscription-button:hover .arrow-icon-footer,
+.subscription-button:focus .arrow-icon-footer {
+  stroke: var(--main-red);
 }
 
 /* .footer-form input::placeholder {

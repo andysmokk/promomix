@@ -10,8 +10,8 @@
     <link rel="stylesheet" href="./CSS/styles.css" />
   </head>
   <body>
-    <header class="header">
-      <nav class="nav-box container-nav">
+    <header class="container-nav">
+      <nav class="nav-box">
         <a class="logo" href="https://andysmokk.github.io/promomix/">
           <svg width="163.77" height="20">
             <use href="./images/icon/sprite.svg#icon-logo"></use>
@@ -394,7 +394,7 @@
           <ul class="news-list">
             <li class="news-list-item">
               <div class="news-list-item-box img-box">
-                <p class="news-article">новость</p>
+                <p class="article-text">новость</p>
                 <img
                   src="./images/articles/img1.jpg"
                   alt="вывеска"
@@ -531,8 +531,16 @@
               рассылку.
             </p>
             <form class="footer-form">
-              <input type="email" placeholder="ваш e-mail" />
-              <button type="submit" class="subscription-button">&#8594;</button>
+              <input
+                class="email-placeholder"
+                type="email"
+                placeholder="Ваш e-mail"
+              />
+              <button type="submit" class="subscription-button">
+                <svg class="arrow-icon-footer" width="20" height="14">
+                  <use href="./images/icon/sprite.svg#icon-arrow-20"></use>
+                </svg>
+              </button>
             </form>
           </div>
         </div>
