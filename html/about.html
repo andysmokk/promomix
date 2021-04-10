@@ -5,110 +5,219 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>about</title>
+    <link rel="stylesheet" href="../CSS/modern-normalize.css" />
+    <link rel="stylesheet" href="../Fonts/stylesheet.css" />
+    <link rel="stylesheet" href="../CSS/about.css" />
   </head>
   <body>
-    <header>
-      <a href="https://andysmokk.github.io/promomix/" id="about">promomix</a>
-      <nav>
-        <ul>
-          <li>
-            <button type="button">поиск</button>
+    <header class="container-nav">
+      <div class="icon-menu-box">
+        <svg width="25" height="25">
+          <use href="../images/icon/sprite.svg#icon-menu-icon"></use>
+        </svg>
+      </div>
+      <nav class="nav-box">
+        <a class="logo" id="about" href="https://andysmokk.github.io/promomix/">
+          <svg width="163.77" height="20">
+            <use href="../images/icon/sprite.svg#icon-logo"></use>
+          </svg>
+        </a>
+        <ul class="list">
+          <li class="list-item">
+            <button type="button" class="button-icon">
+              <svg width="15.59" height="15.59" class="icon-search">
+                <use href="../images/icon/sprite.svg#icon-search"></use>
+              </svg>
+              поиск
+            </button>
           </li>
-          <li>
+          <li class="list-item">
             <a href="tel:+84964290900">8 496 429 09 00</a>
           </li>
-          <li>
+          <li class="list-item">
             <button type="button">оставить заявку</button>
           </li>
         </ul>
       </nav>
     </header>
     <main>
-      <!--секция герой-->
-      <section>
-        <h1>О компании</h1>
-        <p>
-          Promomix – одна из крупнейших компаний на рекламном рынке Подмосковья.
-        </p>
-        <img
-          src="../images/about/img1.jpg"
-          alt="сотрудники общаются в офисе"
-          width="1400"
-        />
+      <!--секция о компании-->
+      <section class="box-position-about">
+        <div class="container">
+          <div class="section-box-about">
+            <h1 class="box-about-item title-section-about">О компании</h1>
+            <p class="box-about-item text-section-about">
+              <span class="text-wrapping"
+                >Promomix – одна из крупнейших компаний</span
+              >
+              на рекламном рынке Подмосковья.
+            </p>
+          </div>
+          <div class="img-box-about">
+            <img
+              src="../images/about/img1.jpg"
+              alt="сотрудники общаются в офисе"
+              width="1400"
+            />
+          </div>
+        </div>
       </section>
+
       <!--секция преимущества-->
-      <section>
-        <!--абзац и заголовок спрячем при оформлении-->
-        <p>Наши преимущества</p>
-        <h2>Создаем рекламу и формируем имидж компаний</h2>
-        <ul>
-          <li>
-            <p>18+</p>
-            <p>лет опыта на рекламном рынке</p>
-          </li>
-          <li>
-            <p>250+</p>
-            <p>реализованных проектов</p>
-          </li>
-          <li>
-            <p>37</p>
-            <p>квалифицированных сотрудников</p>
-          </li>
-          <li>
-            <p>14+</p>
-            <p>профессионального оборудования</p>
-          </li>
-        </ul>
+      <section class="advantages-container-about background-container">
+        <div class="container">
+          <!--Pаголовок спрячем при оформлении-->
+          <h2 class="visually-hidden">
+            Создаем рекламу и формируем имидж компаний
+          </h2>
+          <ul class="advantages-list-about">
+            <li class="list-about-item">
+              <p class="years-item">18+</p>
+              <p class="years-text">
+                <span class="text-wrapping">лет опыта на</span>рекламном рынке
+              </p>
+            </li>
+            <li class="list-about-item">
+              <p class="years-item">250+</p>
+              <p class="years-text">
+                <span class="text-wrapping">реализованных</span>проектов
+              </p>
+            </li>
+            <li class="list-about-item">
+              <p class="years-item">37+</p>
+              <p class="years-text">
+                <span class="text-wrapping">квалифицированных</span>сотрудников
+              </p>
+            </li>
+            <li class="list-about-item">
+              <p class="years-item">14+</p>
+              <p class="years-text">
+                <span class="text-wrapping">профессионального</span>
+                оборудования
+              </p>
+            </li>
+          </ul>
+        </div>
       </section>
+
       <!--секция реклама-->
-      <section>
-        <p>доверьте рекламу профессионалам</p>
-        <!--заголовок реклама скроем-->
-        <h2>реклама</h2>
-        <p>
-          Мы создаем не просто рекламу, а формируем уникальный имидж наших
-          клиентов. Предоставляем широкий спектр услуг – от создания фирменного
-          стиля до наружной рекламы. Благодаря современному оборудованию и
-          точной работе наших сотрудников, ваш бизнес станет узнаваемым и
-          успешным.
-        </p>
-        <!--вместо изображение будет видео-->
-        <img src="../images/about/img2.jpg" alt="видео" width="1200" />
+      <section class="advertising-section">
+        <div class="container">
+          <p class="item-text">доверьте рекламу профессионалам</p>
+          <!--заголовок реклама скроем-->
+          <h2 class="visually-hidden">реклама</h2>
+          <p class="text-section-advertising">
+            Мы создаем не просто рекламу, а формируем уникальный имидж наших
+            клиентов. Предоставляем широкий спектр услуг – от создания
+            фирменного стиля до наружной рекламы. Благодаря современному
+            оборудованию и точной работе наших сотрудников, ваш бизнес станет
+            узнаваемым и успешным.
+          </p>
+          <!--вместо изображение будет видео-->
+          <img
+            class="advertising-video"
+            src="../images/about/img2.jpg"
+            alt="видео"
+            width="1200"
+          />
+        </div>
       </section>
+
       <!--секция услуги-->
       <section>
-        <p>услуги</p>
-        <h2>Ключевые направления</h2>
-        <ul>
-          <li>
-            <a href="/">Наружная реклама</a>
-          </li>
-          <li>
-            <a href="/">Широкоформатная печать</a>
-          </li>
-          <li>
-            <a href="/">Рекламная полиграфия</a>
-          </li>
-          <li>
-            <a href="/">Сувенирная продукция</a>
-          </li>
-          <li>
-            <a href="/">Внутренняя реклама</a>
-          </li>
-          <li>
-            <a href="/">Брендирование одежды</a>
-          </li>
-          <li>
-            <a href="/">Брендирование транспорта</a>
-          </li>
-          <li>
-            <a href="/">Все услуги</a>
-          </li>
-        </ul>
+        <div class="container">
+          <p class="item-text">услуги</p>
+          <h2 class="item-title">
+            Ключевые<span class="part-title"> направления</span>
+          </h2>
+          <ul class="services-list">
+            <li class="services-item">
+              <a href="/" class="services-link">
+                <svg class="services-icons" width="70" height="70">
+                  <use
+                    href="../images/icon/sprite.svg#icon-key-directions-1"
+                  ></use>
+                </svg>
+                <p class="services-item-text">Наружная реклама</p>
+              </a>
+            </li>
+            <li class="services-item">
+              <a href="/" class="services-link">
+                <svg class="services-icons" width="70" height="70">
+                  <use
+                    href="../images/icon/sprite.svg#icon-key-directions-2"
+                  ></use>
+                </svg>
+                <p class="services-item-text">Широкоформатная печать</p>
+              </a>
+            </li>
+            <li class="services-item">
+              <a href="/" class="services-link">
+                <svg class="services-icons" width="70" height="70">
+                  <use
+                    href="../images/icon/sprite.svg#icon-key-directions-3"
+                  ></use>
+                </svg>
+                <p class="services-item-text">Рекламная полиграфия</p>
+              </a>
+            </li>
+            <li class="services-item">
+              <a href="/" class="services-link">
+                <svg class="services-icons" width="70" height="70">
+                  <use
+                    href="../images/icon/sprite.svg#icon-key-directions-4"
+                  ></use>
+                </svg>
+                <p class="services-item-text">Сувенирная продукция</p>
+              </a>
+            </li>
+            <li class="services-item">
+              <a href="/" class="services-link">
+                <svg class="services-icons" width="70" height="70">
+                  <use
+                    href="../images/icon/sprite.svg#icon-key-directions-5"
+                  ></use>
+                </svg>
+                <p class="services-item-text">Внутренняя реклама</p>
+              </a>
+            </li>
+            <li class="services-item">
+              <a href="/" class="services-link">
+                <svg class="services-icons" width="70" height="70">
+                  <use
+                    href="../images/icon/sprite.svg#icon-key-directions-6"
+                  ></use>
+                </svg>
+                <p class="services-item-text">Брендирование одежды</p>
+              </a>
+            </li>
+            <li class="services-item">
+              <a href="/" class="services-link">
+                <svg class="services-icons" width="70" height="70">
+                  <use
+                    href="../images/icon/sprite.svg#icon-key-directions-7"
+                  ></use>
+                </svg>
+                <p class="services-item-text">Брендирование транспорта</p>
+              </a>
+            </li>
+            <li class="services-item">
+              <a href="/" class="services-link">
+                <svg class="services-icons" width="70" height="70">
+                  <use
+                    href="../images/icon/sprite.svg#icon-key-directions-8"
+                  ></use>
+                </svg>
+                <p class="services-item-text">Все услуги</p>
+              </a>
+            </li>
+          </ul>
+        </div>
       </section>
+
       <!--секция история-->
       <section>
-        <p>История</p>
+        <p class="item-text">История</p>
         <h2>18+ лет опыта на рекламном рынке</h2>
         <ul>
           <li>
@@ -192,7 +301,7 @@
       </section>
       <!--секция наши работы-->
       <section>
-        <p>наши работы</p>
+        <p class="item-text">наши работы</p>
         <h2>Воплощаем идеи</h2>
         <ul>
           <li>
@@ -266,44 +375,73 @@
         </form>
       </section>
     </main>
-    <footer>
-      <div>
-        <div>
-          <a href="">Promomix – рекламное агентство полного цикла</a>
-          <button type="button">оставить заявку</button>
-        </div>
-        <nav>
-          <ul>
-            <li><a href="#about">О компании</a></li>
-            <li><a href="./serviсes.html">Услуги</a></li>
-            <li><a href="./works.html">Наши работы</a></li>
-            <li><a href="./servis.html">Сервис</a></li>
-            <li><a href="./complex.html">Комплексные решения</a></li>
-            <li><a href="./posts.html">Статьи и новости</a></li>
-            <li><a href="/">Контакты</a></li>
-          </ul>
-        </nav>
-        <div>
-          <p>
-            Чтобы быть в курсе всех акций и новых событий, подпишитесь на нашу
-            рассылку.
-          </p>
-          <form>
-            <input type="email" placeholder="ваш e-mail" />
-            <button type="submit">&#8594;</button>
-          </form>
+
+    <!-- Секция футер -->
+    <footer class="">
+      <div class="background-container">
+        <div class="footer-box container">
+          <div class="request-box">
+            <a class="request-title" href="/"
+              ><span class="part-title text-wrapping">Promomix –</span>
+              рекламное агентство <br />
+              полного цикла</a
+            >
+            <button type="button" class="button-request">
+              оставить заявку
+            </button>
+          </div>
+          <nav class="nav-box-footer">
+            <ul class="nav-list">
+              <li class="nav-item">
+                <a href="#about">О компании</a>
+              </li>
+              <li class="nav-item">
+                <a href="./html/serviсes.html">Услуги</a>
+              </li>
+              <li class="nav-item">
+                <a href="./html/works.html">Наши работы</a>
+              </li>
+              <li class="nav-item"><a href="./html/servis.html">Сервис</a></li>
+              <li class="nav-item">
+                <a href="./html/complex.html">Комплексные решения</a>
+              </li>
+              <li class="nav-item">
+                <a href="./html/posts.html">Статьи и новости</a>
+              </li>
+              <li class="nav-item"><a href="/">Контакты</a></li>
+            </ul>
+          </nav>
+          <div class="subscription-box">
+            <p class="subscription-text">
+              Чтобы быть в курсе всех акций и новых событий, подпишитесь на нашу
+              рассылку.
+            </p>
+            <form class="footer-form">
+              <input
+                class="email-placeholder"
+                type="email"
+                placeholder="Ваш e-mail"
+              />
+              <button type="submit" class="subscription-button">
+                <svg class="arrow-icon-footer" width="20" height="14">
+                  <use href="../images/icon/sprite.svg#icon-arrow-20"></use>
+                </svg>
+              </button>
+            </form>
+          </div>
         </div>
       </div>
-      <div>
+
+      <div class="footer-links container">
         <p>&copy; 2011 - 2020 Promomix</p>
-        <ul>
-          <li>
+        <ul class="links-list-footer">
+          <li class="links-item-footer">
             <a href="/">Facebook</a>
           </li>
-          <li>
+          <li class="links-item-footer">
             <a href="/">Vkontakte</a>
           </li>
-          <li>
+          <li class="links-item-footer">
             <a href="/">Instagram</a>
           </li>
         </ul>

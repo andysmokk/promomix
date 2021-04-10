@@ -5,19 +5,36 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>services</title>
+    <link rel="stylesheet" href="../CSS/modern-normalize.css" />
+    <link rel="stylesheet" href="../Fonts/stylesheet.css" />
+    <link rel="stylesheet" href="../CSS/serviсes.css" />
   </head>
   <body>
-    <header>
-      <a href="https://andysmokk.github.io/promomix/" id="serviсes">promomix</a>
-      <nav>
-        <ul>
-          <li>
-            <button type="button">поиск</button>
+    <header class="container-nav">
+      <div class="icon-menu-box">
+        <svg width="25" height="25">
+          <use href="../images/icon/sprite.svg#icon-menu-icon"></use>
+        </svg>
+      </div>
+      <nav class="nav-box">
+        <a class="logo" href="https://andysmokk.github.io/promomix/">
+          <svg width="163.77" height="20">
+            <use href="../images/icon/sprite.svg#icon-logo"></use>
+          </svg>
+        </a>
+        <ul class="list">
+          <li class="list-item">
+            <button type="button" class="button-icon">
+              <svg width="15.59" height="15.59" class="icon-search">
+                <use href="../images/icon/sprite.svg#icon-search"></use>
+              </svg>
+              поиск
+            </button>
           </li>
-          <li>
+          <li class="list-item">
             <a href="tel:+84964290900">8 496 429 09 00</a>
           </li>
-          <li>
+          <li class="list-item">
             <button type="button">оставить заявку</button>
           </li>
         </ul>
@@ -262,44 +279,73 @@
         </ul>
       </section>
     </main>
-    <footer>
-      <div>
-        <div>
-          <a href="">Promomix – рекламное агентство полного цикла</a>
-          <button type="button">оставить заявку</button>
-        </div>
-        <nav>
-          <ul>
-            <li><a href="./about.html">О компании</a></li>
-            <li><a href="#serviсes">Услуги</a></li>
-            <li><a href="./works.html">Наши работы</a></li>
-            <li><a href="./servis.html">Сервис</a></li>
-            <li><a href="./complex.html">Комплексные решения</a></li>
-            <li><a href="./posts.html">Статьи и новости</a></li>
-            <li><a href="/">Контакты</a></li>
-          </ul>
-        </nav>
-        <div>
-          <p>
-            Чтобы быть в курсе всех акций и новых событий, подпишитесь на нашу
-            рассылку.
-          </p>
-          <form>
-            <input type="email" placeholder="ваш e-mail" />
-            <button type="submit">&#8594;</button>
-          </form>
+
+    <!-- Секция футер -->
+    <footer class="">
+      <div class="background-container">
+        <div class="footer-box container">
+          <div class="request-box">
+            <a class="request-title" href="/"
+              ><span class="part-title text-wrapping">Promomix –</span>
+              рекламное агентство <br />
+              полного цикла</a
+            >
+            <button type="button" class="button-request">
+              оставить заявку
+            </button>
+          </div>
+          <nav class="nav-box-footer">
+            <ul class="nav-list">
+              <li class="nav-item">
+                <a href="./html/about.html">О компании</a>
+              </li>
+              <li class="nav-item">
+                <a href="./html/serviсes.html">Услуги</a>
+              </li>
+              <li class="nav-item">
+                <a href="./html/works.html">Наши работы</a>
+              </li>
+              <li class="nav-item"><a href="./html/servis.html">Сервис</a></li>
+              <li class="nav-item">
+                <a href="./html/complex.html">Комплексные решения</a>
+              </li>
+              <li class="nav-item">
+                <a href="./html/posts.html">Статьи и новости</a>
+              </li>
+              <li class="nav-item"><a href="/">Контакты</a></li>
+            </ul>
+          </nav>
+          <div class="subscription-box">
+            <p class="subscription-text">
+              Чтобы быть в курсе всех акций и новых событий, подпишитесь на нашу
+              рассылку.
+            </p>
+            <form class="footer-form">
+              <input
+                class="email-placeholder"
+                type="email"
+                placeholder="Ваш e-mail"
+              />
+              <button type="submit" class="subscription-button">
+                <svg class="arrow-icon-footer" width="20" height="14">
+                  <use href="../images/icon/sprite.svg#icon-arrow-20"></use>
+                </svg>
+              </button>
+            </form>
+          </div>
         </div>
       </div>
-      <div>
+
+      <div class="footer-links container">
         <p>&copy; 2011 - 2020 Promomix</p>
-        <ul>
-          <li>
+        <ul class="links-list-footer">
+          <li class="links-item-footer">
             <a href="/">Facebook</a>
           </li>
-          <li>
+          <li class="links-item-footer">
             <a href="/">Vkontakte</a>
           </li>
-          <li>
+          <li class="links-item-footer">
             <a href="/">Instagram</a>
           </li>
         </ul>

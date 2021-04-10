@@ -10,6 +10,8 @@
 }
 
 body {
+  position: relative;
+
   color: var(--main-black);
   font-family: var(--main-font);
   font-size: 16px;
@@ -27,6 +29,7 @@ img {
 button {
   text-transform: inherit;
   font-weight: inherit;
+  cursor: pointer;
 }
 
 button:hover,
@@ -36,13 +39,19 @@ a:focus {
   color: var(--main-red);
 }
 
+/* Перенос текста (красный спан) */
+
 .text-wrapping {
   display: block;
 }
 
-/* .header {
-  background-color: yellowgreen;
-} */
+/* Красная часть текста */
+
+.part-title {
+  color: var(--main-red);
+}
+
+/* Хедер */
 
 .container-nav {
   width: 1200px;
@@ -52,8 +61,15 @@ a:focus {
 
   margin-right: auto;
   margin-left: auto;
+}
 
-  /* border: 1px solid; */
+.icon-menu-box {
+  position: absolute;
+  left: 0;
+  top: 0;
+
+  padding-top: 37px;
+  padding-left: 35px;
 }
 
 .container {
@@ -62,7 +78,6 @@ a:focus {
   padding-left: 30px;
   margin-right: auto;
   margin-left: auto;
-  /* border: 1px solid; */
 }
 
 .background-container {
@@ -86,20 +101,18 @@ a:focus {
 
 .nav-box .list {
   display: flex;
-  /* justify-content: space-between; */
   margin-left: auto;
   align-items: center;
 }
 
 .list-item:not(:last-child) {
-  margin-right: 120px;
+  margin-right: 113px;
 }
 
 .list-item button {
   background: transparent;
   border: none;
   cursor: pointer;
-  /* background-color: green; */
 }
 
 .nav-box .list-item:first-child {
@@ -137,10 +150,32 @@ a:focus {
 /* Секция герой */
 
 .hero {
-  background: url(../images/index/img1.jpg);
+  position: relative;
+  /* background: url(../images/index/img1.jpg);
   background-repeat: no-repeat;
   background-position: right;
-  background-size: auto;
+  background-size: auto; */
+
+  background-image: linear-gradient(
+      90deg,
+      rgb(255, 255, 255, 1) 6.25%,
+      rgb(255, 255, 255, 0) 6.25%
+    ),
+    url(../images/index/img1.jpg);
+  background-repeat: no-repeat;
+}
+
+.icon-arrow-box {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+
+  padding-left: 33px;
+}
+
+.arrow-icon-down {
+  fill: var(--main-white);
+  stroke: currentColor;
 }
 
 .hero .container {
@@ -190,7 +225,6 @@ a:focus {
 }
 
 .services-item {
-  /* background-color: yellow; */
   margin-right: 60px;
   margin-bottom: 60px;
   flex-basis: calc((100% - 60px * var(--grid-item)) / var(--grid-item));
@@ -208,7 +242,6 @@ a:focus {
   height: 255px;
   display: flex;
   flex-direction: column;
-  /* justify-content: space-around; */
 }
 
 .services-icons {
@@ -254,10 +287,6 @@ a:focus {
   color: var(--main-black);
 
   margin-top: 20px;
-}
-
-.part-title {
-  color: var(--main-red);
 }
 
 /* Секци преимущества */
@@ -549,7 +578,7 @@ a:focus {
   margin-right: 60px;
 }
 
-.nav-box {
+.nav-box-footer {
   flex-basis: calc((50% - 90px) / 2);
   margin-right: 60px;
 }
@@ -587,10 +616,6 @@ a:focus {
   margin-bottom: 64px;
 }
 
-/* .subscription-button {
-  margin-top: 64px;
-} */
-
 .footer-links {
   font-size: 14px;
 
@@ -611,7 +636,6 @@ a:focus {
 
 .footer-form input {
   border: none;
-  /* padding-bottom: 15px; */
 }
 
 .footer-form {
@@ -619,8 +643,6 @@ a:focus {
   align-items: center;
   justify-content: space-between;
   border-bottom: 1px solid var(--main-black);
-
-  /* margin-top: 64px; */
 }
 
 .footer-form button {
@@ -650,7 +672,3 @@ a:focus {
 .subscription-button:focus .arrow-icon-footer {
   stroke: var(--main-red);
 }
-
-/* .footer-form input::placeholder {
-  background-color: green;
-} */
