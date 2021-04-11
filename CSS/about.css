@@ -284,6 +284,10 @@ a:focus {
 
 /* Секция услуги */
 
+.section-services {
+  padding-bottom: 200px;
+}
+
 .services-list {
   display: flex;
   flex-wrap: wrap;
@@ -343,12 +347,66 @@ a:focus {
 }
 
 .item-title {
-  font-size: 37px;
+  font-size: 36px;
   font-weight: 500;
   line-height: 1.2;
   color: var(--main-black);
 
   margin-top: 20px;
+}
+
+/* Секция история */
+
+.section-history {
+  padding-top: 180px;
+}
+
+.history-box {
+  display: flex;
+}
+
+.history-box-title {
+  --grid-item: 2;
+  flex-basis: calc((50% - 90px) / var(--grid-item));
+  margin-right: 60px;
+}
+
+.history-box-img {
+  --grid-item: 2;
+  flex-basis: calc((50% - 90px) / var(--grid-item));
+  margin-right: 60px;
+}
+
+.history-box-list {
+  flex-basis: calc(50% - 30px);
+}
+
+.history-years-text {
+  font-weight: 500;
+  font-size: 27px;
+  color: var(--main-red);
+}
+
+.red-circle-list {
+  display: flex;
+  flex-direction: column;
+}
+
+.red-circle-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.red-circle-item::after {
+  content: "";
+  border: 1px solid var(--main-grey);
+  height: 130px;
+}
+
+.history-box-flex {
+  display: flex;
+  justify-content: flex-end;
 }
 
 /* Секция футер */
