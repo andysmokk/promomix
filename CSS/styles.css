@@ -630,7 +630,7 @@ a:focus {
   display: flex;
 }
 
-.links-item-footer + .links-item-footer {
+.links-item-footer {
   margin-left: 33px;
 }
 

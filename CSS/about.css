@@ -93,6 +93,8 @@ a:focus {
 }
 
 .container {
+  position: relative;
+
   width: 1200px;
   padding-right: 30px;
   padding-left: 30px;
@@ -359,6 +361,8 @@ a:focus {
 
 .section-history {
   padding-top: 180px;
+
+  margin-bottom: 337px;
 }
 
 .history-box {
@@ -379,12 +383,40 @@ a:focus {
 
 .history-box-list {
   flex-basis: calc(50% - 30px);
+
+  padding-top: 18px;
 }
 
 .history-years-text {
   font-weight: 500;
   font-size: 27px;
   color: var(--main-red);
+
+  margin-bottom: 15px;
+}
+
+.history-text-2011,
+.history-text-2015,
+.history-text-2017,
+.history-text-2019 {
+  font-size: 16px;
+  line-height: 1.5;
+}
+
+.history-text-2011 {
+  margin-bottom: 51px;
+}
+
+.history-text-2015 {
+  margin-bottom: 53px;
+}
+
+.history-text-2017 {
+  margin-bottom: 53px;
+}
+
+.history-text-2019 {
+  padding-bottom: 470px;
 }
 
 .red-circle-list {
@@ -404,9 +436,26 @@ a:focus {
   height: 130px;
 }
 
+.red-circle-item:last-child:after {
+  content: "";
+  border: 1px solid var(--main-grey);
+  height: 256px;
+}
+
 .history-box-flex {
   display: flex;
   justify-content: flex-end;
+}
+
+.history-box-img {
+  position: relative;
+}
+
+.history-img {
+  display: block;
+  position: absolute;
+
+  bottom: -28%;
 }
 
 /* Секция футер */
