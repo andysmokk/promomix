@@ -93,8 +93,6 @@ a:focus {
 }
 
 .container {
-  position: relative;
-
   width: 1200px;
   padding-right: 30px;
   padding-left: 30px;
@@ -499,22 +497,43 @@ a:focus {
 
 .icon-minus-23 {
   position: absolute;
-  top: 26.5%;
-  right: 0;
+  top: 2.3%;
+  left: 100.7%;
 
   stroke: var(--main-black);
 }
 
-.equipment-number {
+.equipment-list-title {
+  position: relative;
+}
+
+.equipment-number-1 {
   margin-right: 70px;
   margin-top: 4px;
   color: var(--main-grey);
 }
 
-.equipment-number::before {
+.equipment-number-1::before {
   position: absolute;
-  top: 23%;
-  left: 0;
+  top: -34px;
+  right: -2.8%;
+
+  content: "";
+  display: inline-block;
+  border: 1px solid var(--main-grey);
+  width: 1200px;
+}
+
+.equipment-number-2 {
+  margin-right: 70px;
+  margin-top: 4px;
+  color: var(--main-grey);
+}
+
+.equipment-number-2::before {
+  position: absolute;
+  top: -34px;
+  right: -2.8%;
 
   content: "";
   display: inline-block;
@@ -524,6 +543,10 @@ a:focus {
 
 .box-position-equipment {
   padding-top: 100px;
+}
+
+.equipment-img {
+  margin-bottom: 40px;
 }
 
 /* Секция футер */
