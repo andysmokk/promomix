@@ -50,9 +50,6 @@
 <path d="M1.6 14.4h19.2c0.884 0 1.6 0.716 1.6 1.6s-0.716 1.6-1.6 1.6h-19.2c-0.884 0-1.6-0.716-1.6-1.6s0.716-1.6 1.6-1.6z"></path>
 <path d="M1.6 28.8h28.8c0.884 0 1.6 0.716 1.6 1.6s-0.716 1.6-1.6 1.6h-28.8c-0.884 0-1.6-0.716-1.6-1.6s0.716-1.6 1.6-1.6z"></path>
 </symbol>
-<symbol id="icon-minus-23" viewBox="0 0 38 32">
-<path stroke-linejoin="miter" stroke-linecap="butt" stroke-miterlimit="4" stroke-width="16" d="M16 24h-368M0 23.968h368"></path>
-</symbol>
 <symbol id="icon-plus-23" viewBox="0 0 32 32">
 <path stroke-linejoin="miter" stroke-linecap="butt" stroke-miterlimit="4" stroke-width="1.3913" d="M16 0v32M0 16h32"></path>
 </symbol>

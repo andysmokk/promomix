@@ -100,6 +100,8 @@ a:focus {
   padding-left: 30px;
   margin-right: auto;
   margin-left: auto;
+
+  border: 1px solid yellowgreen;
 }
 
 .background-container {
@@ -263,6 +265,8 @@ a:focus {
   color: var(--main-grey);
   letter-spacing: 0.05em;
   text-transform: uppercase;
+
+  margin-bottom: 20px;
 }
 
 .text-section-advertising {
@@ -353,8 +357,6 @@ a:focus {
   font-weight: 500;
   line-height: 1.2;
   color: var(--main-black);
-
-  margin-top: 20px;
 }
 
 /* Секция история */
@@ -456,6 +458,72 @@ a:focus {
   position: absolute;
 
   bottom: -28%;
+}
+
+/* Секция оборудование */
+
+.section-equipment {
+  padding-top: 200px;
+  padding-bottom: 200px;
+}
+
+.box-equipment {
+  display: flex;
+  margin-right: -60px;
+}
+
+.equipment-item {
+  --grid-item: 2;
+  flex-basis: calc((100% - 60px * var(--grid-item)) / var(--grid-item));
+  margin-right: 60px;
+}
+
+.equipment-box-title {
+  display: flex;
+}
+
+.equipment-title {
+  margin-bottom: 130px;
+}
+
+.equipment-title-box {
+  margin-bottom: 33px;
+
+  font-size: 20px;
+  font-weight: 400;
+}
+
+.equipment-text {
+  line-height: 1.5;
+}
+
+.icon-minus-23 {
+  position: absolute;
+  top: 26.5%;
+  right: 0;
+
+  stroke: var(--main-black);
+}
+
+.equipment-number {
+  margin-right: 70px;
+  margin-top: 4px;
+  color: var(--main-grey);
+}
+
+.equipment-number::before {
+  position: absolute;
+  top: 23%;
+  left: 0;
+
+  content: "";
+  display: inline-block;
+  border: 1px solid var(--main-grey);
+  width: 1200px;
+}
+
+.box-position-equipment {
+  padding-top: 100px;
 }
 
 /* Секция футер */
